@@ -1,24 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <!-- Website title -->
     <title>BMI Calculator</title>
+    <!-- CSS File -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <h1 style="font-size: 60px; color: black;">BMI Calculator</h1>
+    
     <div class="form"> 
+            <!-- Input for weight -->
             <label for="weight">Weight (kg):</label>
             <input type="text" id="weight" min="0" class="large-input">
         
         <br> 
+            <!-- Input for height -->
             <label for="height">Height (m):</label>
             <input type="text" id="height" min="0" class="large-input"/>
         <br><br>
-        <button onclick="calculateBMI()">Calculate BMI</button>
+            <!-- Button -->
+            <button onclick="calculateBMI()">Calculate BMI</button>
         <br> 
-    <p id="result"></p>
+            <!-- Result -->
+            <p id="result"></p>
     </div>
+
 <br><br>
+
     <hr>
     <!--BMI values chart-->
     <div class="container">
@@ -60,11 +69,11 @@
 
     <script>
         function calculateBMI() {
-        // Obtain user inputs
+        // Obtain user inputs by DOM
         var weight = parseFloat(document.getElementById("weight").value);
         var height = parseFloat(document.getElementById("height").value);
 
-        // Perform calculation
+        // Perform calculation 
         var bmi = weight / (height * height);
 
         // Display result
