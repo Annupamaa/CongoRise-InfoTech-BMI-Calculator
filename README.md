@@ -33,9 +33,6 @@ The BMI Calculator allows users to input their weight (in kilograms) and height 
 - `index.html`: HTML code for the BMI calculator.
 - `styles.css`: CSS styles for styling the BMI calculator.
 - `script.js`: JavaScript code for calculating BMI and updating the result.
-
-## Credits
-
-This BMI Calculator was created by [Your Name or Organization].
+ 
 
 
